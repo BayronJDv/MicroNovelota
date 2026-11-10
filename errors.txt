@@ -1,0 +1,26 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/testcases.rpy", line 32: Invalid condition.
+    assert persistent.finales == ["F01a"]
+           ^
+
+File "game/testcases.rpy", line 44: end of line expected.
+    assert "F03" in persistent.finales
+                 ^
+
+File "game/testcases.rpy", line 56: end of line expected.
+    assert "F02" in persistent.finales
+                 ^
+
+File "game/testcases.rpy", line 68: end of line expected.
+    assert "F03b" in persistent.finales
+                  ^
+
+File "game/testcases.rpy", line 80: end of line expected.
+    assert "F01b" in persistent.finales
+                  ^
+
+Ren'Py Version: Ren'Py 8.5.3.26051504
+Thu Nov  5 17:38:25 2026
