@@ -27,7 +27,10 @@ game/
 # SDK instalado en ~/renpy-sdk
 ~/renpy-sdk/renpy.sh /home/morfeo/Documentos/Interfaces/JogoPro
 ```
-
+En Windows de bayroar
+```bash
+C:\Users\bairo\renpy-8.5.3-sdk\renpy.exe "C:\Users\bairo\OneDrive\Documentos\INTERFACES\MicroNovelota"
+```
 O abrir la carpeta del proyecto desde el launcher de Ren'Py.
 
 ## Validación

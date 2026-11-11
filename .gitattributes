@@ -1,0 +1,30 @@
+# Forzar LF en TODOS los archivos de texto, en todas las plataformas (Windows incluido)
+* text=auto eol=lf
+
+# Binarios de Ren'Py (git no debe tocarlos jamas)
+*.rpyc binary
+*.rpyb binary
+*.rpa binary
+*.save binary
+/game/saves/persistent binary
+
+# Imagenes
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.ico binary
+
+# Documentos y otros binarios
+*.pptx binary
+*.docx binary
+*.xlsx binary
+
+# Scripts de Windows (el shell de cmd los requiere con CRLF)
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Ejecutables y librerias
+*.exe binary
+*.dll binary

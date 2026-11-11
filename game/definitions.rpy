@@ -42,40 +42,34 @@ transform temblor:
 
 ## Arte #########################################################################
 ##
-## PLACEHOLDERS: cada imagen es un color plano para poder probar el flujo
-## completo sin arte. Cuando lleguen los PNG, sustituir la línea por la ruta
-## real, por ejemplo:
-##
-##     image bg mesa = "images/bg/bg_bar_mesa.png"
-##     image pedro neutro = "images/char/pedro_neutro.png"
-##     image cg f01a = "images/cg/cg_f01a.png"
-##
-## Los colores siguen la escala de luz de ArbolDecisiones.md (biblia visual).
+## Los fondos y CGs se escalan a 1920×1080 con fit="cover" para llenar la
+## pantalla sin deformarse. Los sprites ya están recortados con transparencia
+## y normalizados a 1080 px de alto; los transforms izq/der/solo los posician.
 
-image bg ceremonia = Solid("#4a3218")
-image bg bano = Solid("#223026")
-image bg calle = Solid("#10192a")
-image bg entrada = Solid("#3a2a16")
-image bg barra = Solid("#33251a")
-image bg mesa = Solid("#1b2a41")
-image bg mesa tardia = Solid("#16222f")
+image bg ceremonia = Transform("images/bg/bg_ceremonia.png", xysize=(1920, 1080), fit="cover")
+image bg bano = Transform("images/bg/bg_bano.png", xysize=(1920, 1080), fit="cover")
+image bg calle = Transform("images/bg/bg_calle.png", xysize=(1920, 1080), fit="cover")
+image bg entrada = Transform("images/bg/bg_bar_entrada.png", xysize=(1920, 1080), fit="cover")
+image bg barra = Transform("images/bg/bg_bar_barra.png", xysize=(1920, 1080), fit="cover")
+image bg mesa = Transform("images/bg/bg_bar_mesa.png", xysize=(1920, 1080), fit="cover")
+image bg mesa tardia = Transform("images/bg/bg_bar_mesa_tardia.png", xysize=(1920, 1080), fit="cover")
 
-image pedro neutro = Solid("#6e1f2acc", xsize=1000, ysize=1080)
-image pedro ironico = Solid("#7a2430cc", xsize=1000, ysize=1080)
-image pedro resentido = Solid("#862a36cc", xsize=1000, ysize=1080)
-image pedro vulnerable = Solid("#5e3140cc", xsize=1000, ysize=1080)
-image pedro furia = Solid("#932f3ccc", xsize=1000, ysize=1080)
+image pedro neutro = "images/char/pedro_neutro.png"
+image pedro ironico = "images/char/pedro_ironico.png"
+image pedro resentido = "images/char/pedro_resentido.png"
+image pedro vulnerable = "images/char/pedro_vulnerable.png"
+image pedro furia = "images/char/pedro_furia.png"
 
-image alex neutro = Solid("#2f4538cc", xsize=1000, ysize=1080)
-image alex admiracion = Solid("#3a5344cc", xsize=1000, ysize=1080)
-image alex incomodo = Solid("#26382ecc", xsize=1000, ysize=1080)
+image alex neutro = "images/char/alex_neutro.png"
+image alex admiracion = "images/char/alex_admiracion.png"
+image alex incomodo = "images/char/alex_incomodo.png"
 
-image cg espejo = Solid("#223026")
-image cg f01a = Solid("#5a4322")
-image cg f01b = Solid("#101c2c")
-image cg f02 = Solid("#3d1220")
-image cg f03 = Solid("#1c2f26")
-image cg f03b = Solid("#2b2b33")
+image cg espejo = Transform("images/cg/cg_espejo.png", xysize=(1920, 1080), fit="cover")
+image cg f01a = Transform("images/cg/cg_f01a.png", xysize=(1920, 1080), fit="cover")
+image cg f01b = Transform("images/cg/cg_f01b.png", xysize=(1920, 1080), fit="cover")
+image cg f02 = Transform("images/cg/cg_f02.png", xysize=(1920, 1080), fit="cover")
+image cg f03 = Transform("images/cg/cg_f03.png", xysize=(1920, 1080), fit="cover")
+image cg f03b = Transform("images/cg/cg_f03b.png", xysize=(1920, 1080), fit="cover")
 
 ## Overlays de atmósfera. No se muestran aún; descomentar en las escenas cuando
 ## existan los archivos PNG (fx_vineta, fx_grano, fx_humo, fx_lluvia).

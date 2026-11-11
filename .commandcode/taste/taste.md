@@ -1,6 +1,7 @@
 # Taste
 
 ## Communication
+- Communicates in Spanish (e.g. "ayudame a ejecutar el juego"); respond in Spanish. Confidence: 0.8
 - Pushes back on over-delivery: wants answers scoped to exactly what was asked (e.g. "solo los finales"), not the full set of possibilities or extra related detail. Confidence: 0.5
 
 ## Workflow
